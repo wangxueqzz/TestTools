@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ColumnAETitle" xml:space="preserve">
+    <value>AE Title</value>
+  </data>
+  <data name="ColumnColor" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="ColumnDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="ColumnHost" xml:space="preserve">
+    <value>Host</value>
+  </data>
+  <data name="ColumnName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ColumnPort" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="DicomConfiguration" xml:space="preserve">
+    <value>DICOM</value>
+  </data>
+  <data name="ExceptionPixelFormatNotSupported" xml:space="preserve">
+    <value>{0} Pixel format is not supported.</value>
+  </data>
+  <data name="LabelFilmSizeAutoSelect" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="MenuDicomPrint" xml:space="preserve">
+    <value>DICOM &amp;打印</value>
+  </data>
+  <data name="MenuSelectedDisplaySet" xml:space="preserve">
+    <value>&amp;序列打印</value>
+  </data>
+  <data name="MenuSelectedImage" xml:space="preserve">
+    <value>&amp;单张打印</value>
+  </data>
+  <data name="MessageCannotPrintTrueSize" xml:space="preserve">
+    <value>One or more images do not contain pixel spacing information.  True size printing is not possible.</value>
+  </data>
+  <data name="MessageConfirmDeleteDicomPrinter" xml:space="preserve">
+    <value>Are you sure you want to delete the selected printer?</value>
+  </data>
+  <data name="MessageDicomPrinterNameNotUnique" xml:space="preserve">
+    <value>A DICOM printer with the name '{0}' already exists.  Please enter a different name.</value>
+  </data>
+  <data name="MessageNoPrintersConfigured" xml:space="preserve">
+    <value>There are no DICOM printers configured.  Printers can be configured through the Tools &gt; Options &gt; DICOM &gt; Printers page.</value>
+  </data>
+  <data name="MessagePrinterNotConnected" xml:space="preserve">
+    <value>Failed to establish connection with {0}.  Please check the printer configuration.</value>
+  </data>
+  <data name="MessagePrintingCancelled" xml:space="preserve">
+    <value>Printing cancelled.</value>
+  </data>
+  <data name="MessagePrintingCancelling" xml:space="preserve">
+    <value>Cancelling print request...</value>
+  </data>
+  <data name="MessagePrintingCompleted" xml:space="preserve">
+    <value>All the images have been successfully sent to the printer.</value>
+  </data>
+  <data name="MessagePrintingError" xml:space="preserve">
+    <value>There was an error sending images to {0}.  Some of the films may have already been printed.</value>
+  </data>
+  <data name="MessagePrintingMultiplePatients" xml:space="preserve">
+    <value>Multiple patients have been selected.</value>
+  </data>
+  <data name="MessagePrintingProgress" xml:space="preserve">
+    <value>Sending {0} of {1} image(s) to {2}...</value>
+  </data>
+  <data name="MessagePrintingStarting" xml:space="preserve">
+    <value>Preparing to send {0} image(s) to {1}...</value>
+  </data>
+  <data name="MessagePrintSessionInProgress" xml:space="preserve">
+    <value>There is already a print session in progress.  Please wait for the print session to finish and try again later.</value>
+  </data>
+  <data name="MessagePrintSessionInProgressConfirmExitApplication" xml:space="preserve">
+    <value>There is a print session in progress.  Are you sure you want to close the application?</value>
+  </data>
+  <data name="MessageUnknownFailure" xml:space="preserve">
+    <value>Unknown failure.  The association might have timed-out.  Check the log for more detail.</value>
+  </data>
+  <data name="MessageVerificationFailed" xml:space="preserve">
+    <value>Verification failed</value>
+  </data>
+  <data name="MessageVerificationSuccessful" xml:space="preserve">
+    <value>Verification successful</value>
+  </data>
+  <data name="PrintersConfiguration" xml:space="preserve">
+    <value>Printers</value>
+  </data>
+  <data name="TitleAddPrinter" xml:space="preserve">
+    <value>添加打印机</value>
+  </data>
+  <data name="TitleAdvancedOptions" xml:space="preserve">
+    <value>高级选项</value>
+  </data>
+  <data name="TitleDicomPrint" xml:space="preserve">
+    <value>DICOM Print</value>
+  </data>
+  <data name="TitleDicomPrintProgress" xml:space="preserve">
+    <value>DICOM Print Progress</value>
+  </data>
+  <data name="TitleEditPrinter" xml:space="preserve">
+    <value>编辑打印机</value>
+  </data>
+  <data name="TitleVerify" xml:space="preserve">
+    <value>测试联机</value>
+  </data>
+  <data name="ToolbarDicomPrint" xml:space="preserve">
+    <value>DICOM Print</value>
+  </data>
+  <data name="TooltipDicomPrint" xml:space="preserve">
+    <value>DICOM Print</value>
+  </data>
+  <data name="ValidationAETitleInvalidCharacters" xml:space="preserve">
+    <value>The AE Title contains invalid characters.</value>
+  </data>
+  <data name="ValidationAETitleLengthIncorrect" xml:space="preserve">
+    <value>The AE Title must be between 1 and 16 characters.</value>
+  </data>
+  <data name="ValidationPortOutOfRange" xml:space="preserve">
+    <value>The Port must be between 1 and 65535.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\warning.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuCopyAllToPrintPreview" xml:space="preserve">
+    <value>排版全部图像</value>
+  </data>
+  <data name="MenuCopyDisplaySetToPrintPreview" xml:space="preserve">
+    <value>排版序列图像</value>
+  </data>
+  <data name="MenuCopyImageToPrintPreview" xml:space="preserve">
+    <value>排版单张图像</value>
+  </data>
+  <data name="MenuDicomPrintPreview" xml:space="preserve">
+    <value>打印排版</value>
+  </data>
+  <data name="TooltipDicomPrintPreview" xml:space="preserve">
+    <value>打印排版</value>
+  </data>
+  <data name="ToolbarDicomPrintPreview" xml:space="preserve">
+    <value>打印排版</value>
+  </data>
+  <data name="CommandStack" xml:space="preserve">
+    <value>PrintPreviewStack</value>
+  </data>
+  <data name="TooltipStack" xml:space="preserve">
+    <value>堆积</value>
+  </data>
+  <data name="CommandPan" xml:space="preserve">
+    <value>PrintPreviewPan</value>
+  </data>
+  <data name="MenuPan" xml:space="preserve">
+    <value>&amp;移动</value>
+  </data>
+  <data name="ToolbarPan" xml:space="preserve">
+    <value>移动</value>
+  </data>
+  <data name="TooltipPan" xml:space="preserve">
+    <value>移动</value>
+  </data>
+  <data name="MenuPrintPreviewDeleteImage" xml:space="preserve">
+    <value>删除图像</value>
+  </data>
+  <data name="ToolbarPrintPreviewDeleteImage" xml:space="preserve">
+    <value>删除图像</value>
+  </data>
+  <data name="TooltipPrintPreviewDeleteImage" xml:space="preserve">
+    <value>删除图像</value>
+  </data>
+  <data name="CommandPrintPreviewDeleteImage" xml:space="preserve">
+    <value>PrintPreviewDeleteImage</value>
+  </data>
+  <data name="CommandPrintPreviewCopy" xml:space="preserve">
+    <value>PrintPreviewCopy</value>
+  </data>
+  <data name="CommandPrintPreviewCut" xml:space="preserve">
+    <value>PrintPreviewCut</value>
+  </data>
+  <data name="CommandPrintPreviewPaste" xml:space="preserve">
+    <value>PrintPreviewPaste</value>
+  </data>
+</root>

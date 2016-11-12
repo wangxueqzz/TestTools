@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48497253-4461-49C3-90D9-58AA389ED22E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Macro.ImageViewer.Utilities.Print.Dicom</RootNamespace>
+    <AssemblyName>Macro.ImageViewer.Utilities.Print.Dicom</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutomaticFilmSizeConfiguration.cs" />
+    <Compile Include="DicomPrintManager.cs" />
+    <Compile Include="DicomPrintSession.cs" />
+    <Compile Include="DicomPrinterConfigurationEditorComponent.cs" />
+    <Compile Include="DicomPrinterAdvancedConfigurationComponent.cs" />
+    <Compile Include="DicomPrinterSummaryComponent.cs" />
+    <Compile Include="ConfigurationPageProvider.cs" />
+    <Compile Include="DicomPrinterEditorComponent.cs" />
+    <Compile Include="DicomPrinterTable.cs" />
+    <Compile Include="DicomPrintSessionStatus.cs" />
+    <Compile Include="FilmConfigInformation.cs" />
+    <Compile Include="DciomPrintApplicationComponent.cs" />
+    <Compile Include="DicomPrinter.cs" />
+    <Compile Include="DicomPrinterCollection.cs" />
+    <Compile Include="DicomPrintSettings.cs" />
+    <Compile Include="DicomPrintSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>DicomPrintSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="FilmBox.cs" />
+    <Compile Include="FilmSession.cs" />
+    <Compile Include="IDicomPrintComponent.cs" />
+    <Compile Include="IDicomPrinterAdvancedConfigurationComponent.cs" />
+    <Compile Include="IDicomPrinterConfigurationEditorComponent.cs" />
+    <Compile Include="IDicomPrinterEditorComponent.cs" />
+    <Compile Include="IDicomPrinterSummaryComponent.cs" />
+    <Compile Include="PresentationMode.cs" />
+    <Compile Include="Preview\CaclFilmAndImageSize.cs" />
+    <Compile Include="Preview\CopyImageToPrintViewerTool.cs" />
+    <Compile Include="Preview\DicomImagePlane.cs" />
+    <Compile Include="Preview\DicomPrintComponent.cs" />
+    <Compile Include="Preview\DicomPrintPreviewTool.cs" />
+    <Compile Include="Preview\DicomPrintViewSelectImage.cs" />
+    <Compile Include="Preview\LayoutFactory.cs" />
+    <Compile Include="Preview\DicomPrintPreviewPanTool.cs" />
+    <Compile Include="Preview\MergerDicomImageToBitmap.cs" />
+    <Compile Include="Preview\PrintPreviewDeleteImageTool.cs" />
+    <Compile Include="Preview\PrintPreviewStackTool.cs" />
+    <Compile Include="Preview\PrintReferenceLineTool.cs" />
+    <Compile Include="PrinterFilmSize.cs" />
+    <Compile Include="PrinterImageDisplayFormat.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ISelectPresentationsInformation.cs" />
+    <Compile Include="SelectPresentationsInformationsCollection.cs" />
+    <Compile Include="SelectPresentionInformation.cs" />
+    <Compile Include="SR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="XmlUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Macro.Common.csproj">
+      <Project>{F6EAD428-E6CF-4DF6-B2F3-D33D532C5343}</Project>
+      <Name>Macro.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Desktop\Macro.Desktop.csproj">
+      <Project>{26E9A01A-64B5-42C5-8252-FBB30DF9CEC7}</Project>
+      <Name>Macro.Desktop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Dicom\Macro.Dicom.csproj">
+      <Project>{AD9ECE2B-8268-4115-8DC8-860FBD011FFF}</Project>
+      <Name>Macro.Dicom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Macro.ImageViewer.csproj">
+      <Project>{85100D3E-471C-47C9-9687-ABF25F617ED7}</Project>
+      <Name>Macro.ImageViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Macro.ImageViewer.Common.csproj">
+      <Project>{FEFD73C5-8541-47D2-BBDB-FF61DEA28291}</Project>
+      <Name>Macro.ImageViewer.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tools\Standard\Macro.ImageViewer.Tools.Standard.csproj">
+      <Project>{9AF0770C-7E9F-483F-8429-D7894F06EB6C}</Project>
+      <Name>Macro.ImageViewer.Tools.Standard</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DicomPrintSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DicomPrintSettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\PrintLarge.png" />
+    <EmbeddedResource Include="Icons\PrintMedium.png" />
+    <EmbeddedResource Include="Icons\PrintSmall.png" />
+    <EmbeddedResource Include="Icons\VerifyDicomPrinterToolLarge.png" />
+    <EmbeddedResource Include="Icons\VerifyDicomPrinterToolMedium.png" />
+    <EmbeddedResource Include="Icons\VerifyDicomPrinterToolSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\AddToolSmall.png" />
+    <EmbeddedResource Include="Icons\EditToolSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\CopyToClipboardToolLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\CopyToClipboardToolMedium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\CopyToClipboardToolSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\PrimaryImageSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\StackToolLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\StackToolSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\StackToolMedium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\PrintPreviewSmall.png" />
+    <EmbeddedResource Include="Icons\PrintPreviewMedium.png" />
+    <EmbeddedResource Include="Icons\PrintPreviewLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\PanToolLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\PanToolSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\PanToolMedium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\DeleteImageLarge.png" />
+    <EmbeddedResource Include="Icons\DeleteImageMedium.png" />
+    <EmbeddedResource Include="Icons\DeleteImageSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\CurrentReferenceLineToolLarge.png" />
+    <EmbeddedResource Include="Icons\CurrentReferenceLineToolMedium.png" />
+    <EmbeddedResource Include="Icons\CurrentReferenceLineToolSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\SelectLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\SelectMedium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\SelectSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\LeftLarge.png" />
+    <EmbeddedResource Include="Icons\LeftMedium.png" />
+    <EmbeddedResource Include="Icons\LeftSmall.png" />
+    <EmbeddedResource Include="Icons\RightLarge.png" />
+    <EmbeddedResource Include="Icons\RightMedium.png" />
+    <EmbeddedResource Include="Icons\RightSmall.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
